@@ -62,8 +62,8 @@ function showGifs() {
                 gifDiv.addClass("gifDiv");
                 //Creates a new image 
                 var gifImage = $("<img>");
-                gifImage.attr("src", results[i].images.fixed_height.url);
-                gifImage.attr("data-still", results[i].images.fixed_height.url);
+                gifImage.attr("src", results[i].images.fixed_height_still.url);
+                gifImage.attr("data-still", results[i].images.fixed_height_still.url);
                 gifImage.attr("data-animate", results[i].images.fixed_height.url);
                 gifImage.attr("data-state", "still");
                 gifImage.addClass("gif");
@@ -91,8 +91,8 @@ $(document).on("click", ".gif", function () {
     if (state === "still") {
         $(this).attr("src", $(this).attr("data-animate"));
         $(this).attr("data-state", "animate");
-    } else {
+      } else {
         $(this).attr("src", $(this).attr("data-still"));
         $(this).attr("data-state", "still");
-    }
-}); 
+      }
+    });; 
