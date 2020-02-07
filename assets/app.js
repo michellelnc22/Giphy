@@ -96,3 +96,9 @@ $(document).on("click", ".gif", function () {
         $(this).attr("data-state", "still");
       }
     });; 
+
+//Clears the buttons and all gifs from the space     
+$("#clear").on("click", function () {
+    $("#gif-space").empty(); 
+
+});     

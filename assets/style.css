@@ -10,7 +10,6 @@ a {
 nav {
     color: white; 
     font-weight: bold; 
-    height: 100px; 
    
 }
 
@@ -26,10 +25,17 @@ body {
     width: 80%; 
     padding: 40px; 
     background-color: white; 
-
 }
 
 button {
     margin: 5px; 
+}
+
+.gif {
+    width: 30%; 
+    height: 30%;
+    padding: 5px;
+    margin: 5px;    
+    background-color: white;
 }
 
